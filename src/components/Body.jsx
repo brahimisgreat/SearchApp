@@ -1,13 +1,28 @@
 import classes from "./Body.module.css";
 import cat from "../assets/favicon-32x32.png";
+import { useState, useEffect } from "react";
+import { fetchUsers } from "../data";
 
 export default function Body() {
+ const [user, setUser] = useState([])
+
+
+useEffect(()=>{
+  async function getUsers () {
+    const users = await fetchUsers()
+    setUser(users.data[0])
+    console.log(user)
+
+  }
+  getUsers()
+},[])
+
   return (
     <div className={classes.container}>
       <div className={classes.user}>
         <img src={cat} />
         <div className={classes.userinfo}>
-          <h1>{"the name"}</h1>
+          <h1>{user.login}</h1>
           <a><h3>@{"name"}</h3></a>
           <p>
             joined {"day"} {"month"} {"year"}
