@@ -2,13 +2,21 @@
   width: 20.4375rem;
   height: 32.3125rem;
   flex-shrink: 0;
-  background: #f6f8ff;
+  background: #FEFEFE;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  
 }
 .container .user {
   width: 14.5625rem;
   height: 4.375rem;
   flex-shrink: 0;
   display: flex;
+  gap: 0.2rem;
+  
+   
 }
 .container .user img {
   width: 4.375rem;
@@ -61,16 +69,12 @@
   height: 85px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #f6f8ff;
+  background-color: #F6F8FF;;
   display: flex;
-  border: solid;
   justify-content: center;
   align-items: center;
 }
-.container .stats .repos,
-.followers,
-.following {
-  border: solid;
+.container .stats .sta {
   width: 4.9375rem;
   height: 3rem;
   display: flex;
@@ -81,13 +85,59 @@
   align-items: center;
 }
 h5 {
-  width: 79px;
+  width: 4.9375rem;
   color: #4b6a9b;
   text-align: center;
   font-family: "Space Mono";
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
+.sta span {
+  width: 79px;
+  color: #2b3442;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.sociallinks {
+  width: 11.5625rem;
+  height: 7.9375rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sl {
+  display: flex;
+  height: 1.25rem;
+  align-items: flex-start;
+  gap: 1.202929rem;
+  flex-shrink: 0;
+  align-items: center;
+}
+.sl span {
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.user, .stats, .para, .sociallinks{
+  position: relative;
+  left: 6%;
+}
+.twit{
+  color: #4B6A9B;
+font-family: 'Space Mono';
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

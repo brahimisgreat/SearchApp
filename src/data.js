@@ -1,9 +1,11 @@
+import axios from "axios";
+
 export async function fetchUsers() {
-  try {
-    const response = await fetch("https://api.github.com/users");
-    const result = await response.json();
-    return result;
-  } catch (error) {
-    console.error(error);
+ axios.get('https://api.github.com/users')
+  .then(response => {
+    console.log(response.data[1]);
+  }, error =>{
+    console.log(error)
   }
+  )
 }
