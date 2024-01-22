@@ -1,15 +1,12 @@
 import icon from "../assets/icon-search.svg"
 import classes from './searchbar.module.css'
-import { useState, useEffect } from "react"
+import PropTypes from 'prop-types'
 
 export default function Searchbar({setUsername, username}) {
 
- const [words, setWords] = useState('')
-
 function handleClick() {
  setUsername(username)
- console.log(username)
-  
+ console.log(username) 
 }
 
   return (
@@ -19,4 +16,9 @@ function handleClick() {
         <button onClick={handleClick} >Search</button>
     </div>
   )
+
   }
+Searchbar.propTypes = {
+ setUsername: PropTypes.func,
+ username:PropTypes.string,
+}

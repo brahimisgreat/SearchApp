@@ -11,7 +11,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.kidtainer label {
+.kidtainer button {
   color: #4b6a9b;
   text-align: right;
   font-family: "Space Mono", monospace;
@@ -30,3 +30,9 @@
   align-items: center;
   gap: 1rem;
 }
+button{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+

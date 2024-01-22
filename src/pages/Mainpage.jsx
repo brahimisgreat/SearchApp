@@ -21,7 +21,7 @@ export default function Mainpage() {
       }
     }
     fetchData()
-  },[])
+  },[username])
   
   return (
     <div>
