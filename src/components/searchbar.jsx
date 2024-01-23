@@ -1,18 +1,26 @@
 import icon from "../assets/icon-search.svg"
 import classes from './searchbar.module.css'
 import PropTypes from 'prop-types'
+import { useContext } from "react"
+import { MyContext } from "../Context/MyContext"
 
-export default function Searchbar({setUsername, username}) {
+export default function Searchbar({username}) {
+  const {usernam, setUsernam} = useContext(MyContext)
 
-function handleClick() {
- setUsername(username)
+function handleClick() { 
+ setUsernam(usernam)
  console.log(username) 
+}
+function onChange(e) {
+  e.preventDefault;
+  setUsernam(e.target.value)
+
 }
 
   return (
     <div className={classes.container}>
         <img src={icon} />
-        <input type="text" placeholder="Search GitHub username…"  value={username} onChange={(e) => setUsername(e.target.value)}></input>
+        <input type="text" placeholder="Search GitHub username…"  value={usernam} onChange={onChange}></input>
         <button onClick={handleClick} >Search</button>
     </div>
   )

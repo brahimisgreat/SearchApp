@@ -6,6 +6,7 @@ import website from "../assets/icon-website.svg";
 import PropTypes from "prop-types";
 
 export default function Body({ data }) {
+
   //gets users date of account creation
   const eta = data.created_at;
   const date = new Date(eta);
