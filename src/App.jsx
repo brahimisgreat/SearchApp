@@ -1,18 +1,26 @@
-import './App.css'
-import Mainpage from './pages/Mainpage'
-import { MyContext } from './Context/MyContext'
-import { useState } from 'react'
+import "./App.css";
+import Mainpage from "./pages/Mainpage";
+import { MyContext, ThemeContext } from "./Context/MyContext";
+import { useState } from "react";
 
 function App() {
-const [usernam, setUsernam] = useState('brahimisgreat')
+  const [usernam, setUsernam] = useState("brahimisgreat");
+  const [theme, setTheme] = useState('light')
+
+  function toggleTheme() {
+    setTheme((curr) => (curr === 'light' ? 'dark' : 'light'))
+  }
+
 
   return (
-    <>
-    <MyContext.Provider value={{usernam, setUsernam}}>
-       <Mainpage />
-    </MyContext.Provider>
-    </>
-  )
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <MyContext.Provider value={{ usernam, setUsernam }}>
+        <div className="bob" id={theme}>
+          <Mainpage />
+        </div>
+      </MyContext.Provider>
+    </ThemeContext.Provider>
+  );
 }
 
-export default App
+export default App;

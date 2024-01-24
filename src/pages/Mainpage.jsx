@@ -4,6 +4,7 @@ import Searchbar from '../components/searchbar'
 import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { MyContext } from '../Context/MyContext'
+import classes from './main.module.css'
 
 export default function Mainpage() {
 
@@ -28,7 +29,7 @@ export default function Mainpage() {
   },[usernam])
   
   return (
-    <div>
+    <div className={classes.mainContainer}>
       <Header />
       <Searchbar setUsername={setUsername} username={username}/>
       <Body  data={user}/>

@@ -2,10 +2,11 @@ import icon from "../assets/icon-search.svg"
 import classes from './searchbar.module.css'
 import PropTypes from 'prop-types'
 import { useContext } from "react"
-import { MyContext } from "../Context/MyContext"
+import { MyContext, ThemeContext } from "../Context/MyContext"
 
 export default function Searchbar({username}) {
   const {usernam, setUsernam} = useContext(MyContext)
+  const {theme} = useContext(ThemeContext)
 
 function handleClick() { 
  setUsernam(usernam)
@@ -13,14 +14,14 @@ function handleClick() {
 }
 function onChange(e) {
   e.preventDefault;
-  setUsernam(e.target.value)
+  
 
 }
 
   return (
-    <div className={classes.container}>
+    <div className={theme}>
         <img src={icon} />
-        <input type="text" placeholder="Search GitHub username…"  value={usernam} onChange={onChange}></input>
+        <input type="text" placeholder="Search GitHub username…"  value={usernam} onChange={onChange} ></input>
         <button onClick={handleClick} >Search</button>
     </div>
   )
