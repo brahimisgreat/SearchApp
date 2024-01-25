@@ -1,5 +1,5 @@
 import icon from "../assets/icon-search.svg"
-import classes from './searchbar.module.css'
+import  './searchbar.css'
 import PropTypes from 'prop-types'
 import { useContext } from "react"
 import { MyContext, ThemeContext } from "../Context/MyContext"
@@ -11,6 +11,7 @@ export default function Searchbar({username}) {
 function handleClick() { 
  setUsernam(usernam)
  console.log(username) 
+ console.log(theme)
 }
 function onChange(e) {
   e.preventDefault;
@@ -19,7 +20,7 @@ function onChange(e) {
 }
 
   return (
-    <div className={theme}>
+    <div  className={theme}>
         <img src={icon} />
         <input type="text" placeholder="Search GitHub username…"  value={usernam} onChange={onChange} ></input>
         <button onClick={handleClick} >Search</button>
