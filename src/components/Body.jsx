@@ -28,7 +28,7 @@ export default function Body({ data }) {
         <div className={'userinfo'}>
           <h1>{data.login}</h1>
           <a>
-            <h3>@{data.login}</h3>
+            <h3 className="datalogin">@{data.login}</h3>
           </a>
           <p>{newdate}</p>
         </div>
@@ -53,7 +53,7 @@ export default function Body({ data }) {
       </div>
       <div className={'sociallinks'}>
         <div className={'sl'}>
-          <img src={location} />
+          <img id='location' src={location} />
           <span> {data.location ? data.location : "not available"}</span>
         </div>
         <div className={'sl'}>
