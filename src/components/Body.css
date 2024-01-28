@@ -1,4 +1,4 @@
-.container {
+.light-bodyContainer {
   width: 20.4375rem;
   height: 32.3125rem;
   flex-shrink: 0;
@@ -9,9 +9,9 @@
   gap: 16px;
   border-radius: 15px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-  
 }
-.container .user {
+
+.light-bodyContainer .user {
   width: 14.5625rem;
   height: 4.375rem;
   flex-shrink: 0;
@@ -20,28 +20,28 @@
   
    
 }
-.container .user img {
+.light-bodyContainer .user img {
   width: 4.375rem;
   height: 4.375rem;
   flex-shrink: 0;
   border-radius: 4.375rem;
 }
-.container .userinfo {
+.light-bodyContainer .userinfo {
   width: 9rem;
   height: 4.3125rem;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
 }
-.container .userinfo h1 {
-  color: #2b3442;
+.light-bodyContainer .userinfo h1 {
+  color: #eaedf0;
   font-family: "Space Mono";
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.container .userinfo a {
+.light-bodyContainer .userinfo a {
   color: #0079ff;
   font-family: "Space Mono";
   font-size: 13px;
@@ -49,7 +49,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.container .userinfo p {
+.light-bodyContainer .userinfo p {
   color: #697c9a;
   font-family: "Space Mono";
   font-size: 0.8125rem;
@@ -57,7 +57,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.container p {
+.light-bodyContainer p {
   width: 279px;
   color: #4b6a9b;
   font-family: "Space Mono";
@@ -66,7 +66,7 @@
   font-weight: 400;
   line-height: 25px; /* 192.308% */
 }
-.container .stats {
+.light-bodyContainer .stats {
   width: 279px;
   height: 85px;
   flex-shrink: 0;
@@ -76,7 +76,7 @@
   justify-content: center;
   align-items: center;
 }
-.container .stats .sta {
+.light-bodyContainer .stats .sta {
   width: 4.9375rem;
   height: 3rem;
   display: flex;

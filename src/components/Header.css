@@ -1,16 +1,26 @@
-.container {
+.dark1 {
   display: flex;
   justify-content: space-between;
   width: 20.4375rem;
+  flex-direction: row;
+  color: white;
 }
-#dark {
+.light1 {
   display: flex;
   justify-content: space-between;
   width: 20.4375rem;
- border: solid red;
+  flex-direction: row;
 }
 
-.container h3 {
+.dark1 h3 {
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.light1 h3 {
   color: #222731;
   font-family: "Space Mono", monospace;
   font-size: 1.625rem;
@@ -18,16 +28,20 @@
   font-weight: 700;
   line-height: normal;
 }
-.container h3 {
-  color: #222731;
+
+
+.dark1 button {
+  color: #fff;
+  text-align: right;
   font-family: "Space Mono", monospace;
-  font-size: 1.625rem;
+  font-size: 0.8125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  letter-spacing: 2.5px;
+  background-color:transparent;
 }
-
-.kidtainer button {
+.light1 button {
   color: #4b6a9b;
   text-align: right;
   font-family: "Space Mono", monospace;
@@ -36,9 +50,12 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2.5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-.kidtainer button {
-  color: #4b6a9b;
+.dark1 button {
+  color: #FFF;
   text-align: right;
   font-family: "Space Mono", monospace;
   font-size: 0.8125rem;
@@ -46,36 +63,23 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2.5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.kidtainer img {
+
+.light1 .kidtainer img {
   width: 1.25rem;
   height: 1.25rem;
 }
-.kidtainer img {
-  width: 1.25rem;
-  height: 1.25rem;
-}
+
 
 .kidtainer {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.kidtainer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
-button{
-  border: none;
-  background-color: white;
-  cursor: pointer;
-}
-button{
-  border: none;
-  background-color: white;
-  cursor: pointer;
-}
+
 
