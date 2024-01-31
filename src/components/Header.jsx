@@ -1,18 +1,21 @@
-import classes from  './Header.module.css'
+import    './Header.css'
 import moon from '../assets/icon-moon.svg'
-
+import { ThemeContext } from '../Context/MyContext'
+import { useContext } from 'react'
+import sun from '../assets/icon-sun.svg'
 export default function Header() {
+  const {theme} = useContext(ThemeContext)
+  const {toggleTheme} = useContext(ThemeContext)
 
-function Click () {
-console.log()
-}
+
+
 
   return (
-    <div className={classes.container}>
+    <div className={theme + 1} >
         <h3>devfinder</h3>
-        <div className={classes.kidtainer}>
-            <button onClick={Click} >{'Dark'}</button>
-            <img src={moon} />     
+        <div className='kidtainer'>
+            <button onClick={toggleTheme} >{theme === "dark" ? 'Light' : "Dark" }</button>
+            {theme === 'light' ? <img src={moon}/> : <img src={sun}/>}   
         </div>
     </div>
   )

@@ -3,12 +3,13 @@ import Header from '../components/Header'
 import Searchbar from '../components/searchbar'
 import { useState, useEffect } from 'react'
 import { useContext } from 'react'
-import { MyContext } from '../Context/MyContext'
-import classes from './main.module.css'
+import { MyContext, ThemeContext } from '../Context/MyContext'
+import   './main.css'
 
 export default function Mainpage() {
 
   const {usernam}= useContext(MyContext)
+  const {theme} = useContext(ThemeContext)
 
   const [user, setUser] = useState([])
   const [username, setUsername] =useState('octacat')
@@ -29,7 +30,7 @@ export default function Mainpage() {
   },[usernam])
   
   return (
-    <div className={classes.mainContainer}>
+    <div className={theme + "-mainContainer"}>
       <Header />
       <Searchbar setUsername={setUsername} username={username}/>
       <Body  data={user}/>

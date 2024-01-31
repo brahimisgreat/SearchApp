@@ -1,0 +1,85 @@
+.dark1 {
+  display: flex;
+  justify-content: space-between;
+  width: 20.4375rem;
+  flex-direction: row;
+  color: white;
+}
+.light1 {
+  display: flex;
+  justify-content: space-between;
+  width: 20.4375rem;
+  flex-direction: row;
+}
+
+.dark1 h3 {
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.light1 h3 {
+  color: #222731;
+  font-family: "Space Mono", monospace;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.dark1 button {
+  color: #fff;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  background-color:transparent;
+}
+.light1 button {
+  color: #4b6a9b;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.dark1 button {
+  color: #FFF;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.light1 .kidtainer img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
+.kidtainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+

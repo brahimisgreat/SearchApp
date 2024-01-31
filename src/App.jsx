@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function App() {
   const [usernam, setUsernam] = useState("brahimisgreat");
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
 
   function toggleTheme() {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'))
